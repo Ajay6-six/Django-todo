@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container w-75 d-flex justify-content-center shadow p-3 mb-5 rounded box" style="margin-top:10%">
+<a class="btn  m-5" href="{% url 'addtask' %}" >ADD TASK</a>
+<a class="btn  m-5" href="{% url 'viewtask' %}" >VIEW TASKS</a>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<table class="table table-bordered" style="color:#344F1F;">
+
+    <tr>
+    <th>Task</th>
+    <th>Deadline</th>
+    <th>Status</th>
+        <th> </th>
+        </tr>
+
+    {% for i in tasks %}
+    <tr>
+    <td>{{ i.task }}</td>
+    <td>{{ i.deadline }}</td>
+        {% if i.done %}
+    <td>completed</td>
+    {% else %}
+    <td>
+    <form method="post" action="{% url 'done_task' i.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn" id="done">DONE</button>
+    </form>
+        </td>
+    {% endif %}
+    <td>
+        <form method="post" action="{% url 'delete_task' i.id %}">
+            {% csrf_token %}
+            <button type="submit" id="delete">DELETE</button>
+        </form>
+    </td>
+        </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}

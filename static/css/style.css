@@ -1,0 +1,33 @@
+.box{
+    background-color:#F2EAD3;
+    font-size:2rem;
+    color:#344F1F;
+    }
+
+#title{
+       font-family:"Bitcount Prop Single Ink",Copperplate;
+      }
+
+body{
+    background-color:#F9F5F0;
+    font-family:Copperplate;
+    }
+
+.btn{
+    background-color:#F4991A;
+    font-size:2rem;
+    color:#344F1F;
+    }
+
+table{
+      background-color:#F2EAD3;
+      font-size:1.3rem;
+        }
+#done{
+     font-size:1rem;
+    }
+
+#delete{
+    background-color:red;
+    font-size:1rem;
+}
