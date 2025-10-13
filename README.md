@@ -13,6 +13,8 @@ A simple **TO DO application** built with **Django** to manage tasks. Users can 
 - Responsive UI using **Bootstrap**.
 
 
+
+
 ##  Pages
 
 1. **Home Page** (`index.html`)  
@@ -37,3 +39,6 @@ The project was built using the following technologies:
 - **Bootstrap 5** – For responsive and modern UI styling.  
 - **HTML / CSS** – For structuring and styling the pages.  
 - **SQLite** – The default database used for storing tasks.  
+
+##  Updates
+- Added filter by date feature
